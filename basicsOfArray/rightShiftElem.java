@@ -10,7 +10,7 @@ public class rightShiftElem {
             arr[0]=temp;
         }
         else{
-            arr[i]=arr[i-1]; // this will swap the value 
+            arr[i]=arr[i-1]; // this will shift the value 
         }
         i--;
     }
