@@ -1,6 +1,6 @@
 public class modeOfThearray{
  void add(){
-    System.out.println("  ");
+    System.out.println("  );
  }
 
 
