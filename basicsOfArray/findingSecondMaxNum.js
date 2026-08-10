@@ -1,19 +1,19 @@
-const arr=[1,2,3,4,5,6,7,8,9,10]
+const arr=[1,2,3,4,5,6,7,8,9,10,11]
 
 function secondLargest(arr){
 let largest=-Infinity
 let secondLargest=-Infinity
 
-for(let elem of arr){
-if(elem>largest){
-    largest=elem
-    secondLargest=largest
-
-    if(elem>secondLargest){
-        secondLargest= elem
-
-    }
+for(let i =0;i<arr.length;i++){
+if(arr[i]>largest){
+    secondLargest = largest
+    largest=arr[i]
 }
+else if(arr[i]>secondLargest){
+    secondLargest = arr[i]
+}
+
+
 }
 return secondLargest
 }
