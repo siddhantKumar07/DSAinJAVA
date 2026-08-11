@@ -1,6 +1,6 @@
 const arr=[1,2,3,4,5,6,7,8,9,10,11]
 
-// this fun returns se
+// this fun returns second largest
 function secondLargest(arr){
 let largest=-Infinity
 let secondLargest=-Infinity
