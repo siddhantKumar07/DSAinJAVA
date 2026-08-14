@@ -6,6 +6,8 @@ public class deepCopyOfArray {
         System.out.println(arr[1]);
         int copy[]=Arrays.copyOf(arr,arr.length);
         copy[1]=55;
+        System.out.println("copied array");
         System.out.println(copy[1]);
+
     }
 }
