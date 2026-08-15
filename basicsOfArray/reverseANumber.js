@@ -4,5 +4,5 @@ while(num>0){
     rev=num%10+rev*10
     num/10;
 }
-
+return rev
 }
