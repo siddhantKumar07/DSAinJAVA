@@ -10,10 +10,11 @@ const checkpalindrome=(value)=>{
 
     }
     if(typeof(value)=="number"){
-   const reverse=0,temp;
+   let reverse=0;
+   let temp
    temp=value;
    while(temp>0){
-     reverse =temp/10+reverse*10;
+     reverse =Math.trunc(temp%10+reverse*10);
      temp=Math.trunc(temp/10)
    }
    if(reverse==value){
@@ -24,3 +25,4 @@ const checkpalindrome=(value)=>{
   
 }
 checkpalindrome("madam")
+checkpalindrome(121)
