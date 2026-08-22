@@ -7,7 +7,6 @@ const checkpalindrome=(value)=>{
         else{
             console.log("its not a palindrome number")
         }
-
     }
     if(typeof(value)=="number"){
    let reverse=0;
