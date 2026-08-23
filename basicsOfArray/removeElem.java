@@ -8,11 +8,12 @@ public class removeElem {
                 count++;
             }
         }
+        System.out.println(count);
         int arr2[]= new int[count];
         int j=0;
-        for (int i = 0; i < arr2.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if(arr[i]!=elem){
-                arr[j]=arr[i];
+                arr2[j]=arr[i];
                 j++;
             }
         }
@@ -21,8 +22,8 @@ public class removeElem {
 
 
     public static void main(String[] args) {
-        int arr[]={1,2,3,4,5,6,7,9,8,6,9,5,8,8,9};
-        int elem=8;
+        int arr[]={1,2,3,4,4,5};
+        int elem=4;
         int arr2[]=removeElement(arr, elem);
         System.out.println(Arrays.toString(arr2));
     }
