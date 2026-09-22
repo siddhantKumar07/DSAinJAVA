@@ -46,5 +46,8 @@ public class Iterators {
 
     ArrayList <Integer> cloned = (ArrayList<Integer>)list.clone();// clone method is used to create a copy of the list
      System.out.println("cloned "+cloned);
+     System.out.println(cloned.isEmpty());
+     System.out.println(cloned.size());
+     System.out.println(list2.indexOf(7  ));
     }
 }
