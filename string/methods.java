@@ -16,7 +16,12 @@ public class methods {
 
         System.out.println(name.equals(name2));// true because it compares the value not reference 
     System.out.println(name.equalsIgnoreCase(name2));// true because it compares the value not reference and ignore the case of string
-    
 
+System.out.println(name.contains("t"));// true because it checks if the string contains the given character or not
+System.out.println(name.charAt(3));// d because it returns the character at the given index
+System.out.println(name.indexOf("d"));// 3 because it returns the index of the given character
+System.out.println(name.length());// 8 because it returns the length of the string
+System.out.println(name.substring(2,5));//  because it returns the substring from index 2 to 5
+System.out.println(name.replace("s","S"));// Siddhant because it replaces the given
     }
 }
