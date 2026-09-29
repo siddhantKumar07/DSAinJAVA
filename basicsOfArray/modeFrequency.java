@@ -21,19 +21,27 @@ public class modeFrequency {
         // System.out.println("Frequency: " + maxCount);
 
 
-        // second method
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 20, 7, 7, 8};
-        HashMap <Integer, Integer> freq = new HashMap<>();
+        // second method using hashmap
+
+        int arr []={1,2,2,2,2,4,4,4,4,4,4,7,7,7,75,5,6,5,3,45,8,7,2,5,1,1,1,1,1,1,2,2,2,2,2,4,4,4};
+        int mode = arr[0];
+        int maxFrequency = 0;
+        HashMap<Integer, Integer> frequency = new HashMap<>();
+
         for (int elem : arr) {
-            freq.put(elem,freq.getOrDefault(elem, 0)+1);
+            frequency.put(elem, frequency.getOrDefault(elem, 0) + 1);
         }
-        int mode=freq.get(arr[0]);
-        for (int i : freq.keySet()) {
-                System.out.println("Element: " + i + ", Frequency: " + freq.get(i));
-                if(freq.get(i)>mode){
-                    mode = i;
-                }
+
+        for (int key : frequency.keySet()) {
+            System.out.println(key + "--->" + frequency.get(key));
+
+            if (frequency.get(key) > maxFrequency) {
+                maxFrequency = frequency.get(key);
+                mode = key;
+            }
         }
+
         System.out.println("Mode: " + mode);
+        System.out.println("Highest frequency: " + maxFrequency);
     }
 }
