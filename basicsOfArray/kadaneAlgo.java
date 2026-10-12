@@ -12,8 +12,6 @@ public class kadaneAlgo {
               // condition for negative 
               sum=sum<0?0:sum;
         }
-
-
         return maxi;
     }
     public static void main(String[] args) {
